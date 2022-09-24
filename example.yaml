@@ -1,0 +1,31 @@
+name: <api_name>
+type: <class or function>
+defination: <api_path>(parameter1, parameter2, parameter3=<default_value3>)
+
+introduction:
+	type: <general function> # such as `激活函数`, `损失函数` and `创建一个可调用对象`
+	content: <introcution of the api>
+
+parameters:
+	parameter1:
+		type: <type of parameter1>
+		introduction: <introduction of parameter1>
+	parameter2:
+		type: <type of parameter2>
+		introduction: <introduction of parameter2>
+	parameter3:
+		type: <type of parameter3>
+		introduction: <introduction of parameter3>
+
+returns:
+	default: # if default == None, it will return only one variable
+		shape: <shape of return>
+		introduction: <introduction of return>
+	<name1 of return variable>: # L is the name of return variable. if the default is not None, this item will be ignore
+		shape: 
+		introduction:
+	<name2 of return variable>:
+		shape:
+		introduction:
+example:
+	default: COPY-FROM: <api_path>
